@@ -4,6 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.time.LocalDate;
 import java.util.List;
 public interface UserRepository extends JpaRepository<User,Integer> {
+    public List<User> findByName(String name);
     public List<User> findByDateBetween(LocalDate startDate, LocalDate endDate);
     public List<User> findByEmail(String email);
     public List<User> findByCity(String city);
