@@ -10,7 +10,7 @@ public interface UserRepository extends JpaRepository<User,Integer> {
     //kushwaha
     public List<User> findByCity(String city);
     public  Boolean existsByEmail(String email);
-    public List<User> findByRole(String role);
+    
     //arun
     public List<User> findByCityAndRole(String city, String role);
     public List<User> findByDateBetweenAndRole(LocalDate startDate, LocalDate endDate, String role);
