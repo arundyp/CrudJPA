@@ -28,5 +28,6 @@ public class User {
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate date;
     private String city;
+    private int age;
 
 }
