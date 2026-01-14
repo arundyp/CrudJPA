@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import java.util.List;
 public interface UserRepository extends JpaRepository<User,Integer> {
     public List<User> findByDateBetween(LocalDate startDate, LocalDate endDate);
+    public User findByFirstNameAndLastName(String first,String last);
     public List<User> findByEmail(String email);
     //kushwaha
     public List<User> findByCity(String city);
