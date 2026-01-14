@@ -9,4 +9,5 @@ public interface UserRepository extends JpaRepository<User,Integer> {
     public List<User> findByCity(String city);
     public  Boolean existsByEmail(String email);
     public List<User> findByRole(String role);
+    public List<User> findByCityAndRole(String city, String role);
 }
